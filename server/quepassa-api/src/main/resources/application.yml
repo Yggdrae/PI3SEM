@@ -1,7 +1,7 @@
 spring:
   web:
     cors:
-      allowed-origins: "http://localhost:5173"
+      allowed-origins: "http://192.168.15.200:5173"
       allowed-methods: GET, POST, PATCH, PUT, DELETE, OPTIONS, HEAD
       max-age: 3600
       allowed-headers: "Access-Control-Allow-Origin"

@@ -31,7 +31,7 @@ public class ContactController {
         this.contactService = contactService;
     }
 
-    @CrossOrigin(origins = "http://localhost:5173", allowedHeaders = {"Content-Type", "Authorization"}, exposedHeaders = "Authorization", maxAge = 3600)
+    @CrossOrigin(origins = "http://192.168.15.200:5173", allowedHeaders = {"Content-Type", "Authorization"}, exposedHeaders = "Authorization", maxAge = 3600)
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public ResponseEntity<Contacts> add(@RequestBody CreateContactDTO createContactDTO){

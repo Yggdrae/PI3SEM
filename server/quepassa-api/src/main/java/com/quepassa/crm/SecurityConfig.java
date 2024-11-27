@@ -20,7 +20,7 @@ public class SecurityConfig implements WebMvcConfigurer{
 			public void addCorsMappings(@SuppressWarnings("null") CorsRegistry registry){
 
 				registry.addMapping("/**")
-				.allowedOrigins("http://localhost:5173")
+				.allowedOrigins("http://192.168.15.200:5173")
 				.allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS") // Métodos HTTP permitidos
 				.allowedHeaders("Authorization", "Content-Type") // Permite todos os cabeçalhos
 				.exposedHeaders("Authorization") // Expõe cabeçalhos necessários

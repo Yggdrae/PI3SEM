@@ -9,7 +9,7 @@ const StompService = (() => {
       const token = localStorage.getItem('authToken'); // Obtém o token de autenticação
 
       stompClient = new Client({
-        brokerURL: `ws://localhost:8080/ws?token=${token}`,
+        brokerURL: `ws://192.168.15.200:8080/ws?token=${token}`,
         reconnectDelay: 5000, // Reconectar automaticamente em caso de desconexão
         onConnect: onConnectCallback,
         onStompError: onErrorCallback,
